@@ -19,10 +19,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Dynamically load images from the 'images' folder
 
-    const fs = require('fs');
-    const path = require('path');
-
-    console.log(fs.readdirSync('images'))
     const folderPath = 'images';
     fetch(folderPath)
         .then(response => response.text())
