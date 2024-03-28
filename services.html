@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erie Custom Fab Inc</title>
+
+
+    <script>
+        function toggle() {
+            const items = document.getElementsByClassName("item");
+            for(var i = 0; i< items.length; i++) {
+                items[i].classList.toggle("active")
+            }
+            const bars = document.getElementById("bars");
+            bars.classList.toggle("open")
+        }
+    </script>
+</head>
+<link rel="stylesheet" href="services.css">
+<body>
+
+    <!-- hero section -->
+    <div class="hero-container">
+        <header>
+            <nav>
+                <ul class="menu">
+                  <li class="logo"><a href="index.html">Erie Custom</a></li>
+                  <li class="item"><a href="about.html">About</a></li>
+                  <li class="item"><a href="services.html">Services</a></li>
+                  <li class="item"><a href="gallery.html">Gallery</a></li>
+                  <li class="item button"><a href="contact.html">Contact</a></li>
+                  <li class="toggle" onclick="toggle()"><span class="bars" id="bars"></span></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <!-- services -->
+
+    <div class="services-container">
+        <div class="cards-container">
+            <div class="card">
+                <div class="card-icon"><img src="images/s3.jpg" alt=""></div>
+                <div class="card-content">
+                  <div class="card-title">Professional Weilding</div>
+                  <div class="card-desc">alskhdfl aslkdfnl laskkiiei ididipsfs</div>
+                </div>
+            </div>
+
+            <div class="card">
+              <div class="card-icon"><img src="images/s4.jpg" alt=""></div>
+              <div class="card-content">
+                <div class="card-title">Professional Weilding</div>
+                <div class="card-desc">alskhdfl aslkdfnl laskkiiei ididipsfs</div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-icon"><img src="images/s5.jpg" alt=""></div>
+              <div class="card-content">
+                <div class="card-title">Professional Weilding</div>
+                <div class="card-desc">alskhdfl aslkdfnl laskkiiei fcygjvhbabszjcbnxjkvx xkj
+                  cbvabjn mcnalskhdfl aslkdfnl laskkiiei fcygjvhbabszjcbnxjkvx xkj</div>
+              </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <!-- footer -->
+      
+      <footer class="footer">
+        <div class="footer__addr">
+          <h1 class="footer__logo">Erie Custom Fab Inc</h1>
+              
+          <h2>Contact</h2>
+          
+          <address>
+            5534 Somewhere In. The World 22193-10212<br>
+                
+            <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
+          </address>
+        </div>
+        
+        <ul class="footer__nav">
+          <li class="nav__item">
+            <h2 class="nav__title">Links</h2>
+      
+            <ul class="nav__ul">
+              <li>
+                <a href="#">Home</a>
+              </li>
+      
+              <li>
+                <a href="#">About us</a>
+              </li>
+                  
+              <li>
+                <a href="#">Gallery</a>
+              </li>
+              <li>
+                <a href="#">Services</a>
+              </li>
+            </ul>
+          </li>
+          
+          <!-- <li class="nav__item nav__item--extra">
+            <h2 class="nav__title">Quick Links</h2>
+            
+            <ul class="nav__ul nav__ul--extra">
+              <li>
+                <a href="#">Home</a>
+              </li>
+              
+              <li>
+                <a href="#">About us</a>
+              </li>
+              
+              <li>
+                <a href="#">Services</a>
+              </li>
+              <li>
+                <a href="#">Gallery</a>
+              </li>
+              
+            </ul>
+          </li> -->
+          
+          <li class="nav__item">
+            <h2 class="nav__title">Social</h2>
+            
+            <ul class="nav__ul">
+              <li>
+                <a href="#">Instagram</a>
+              </li>
+              
+              <li>
+                <a href="#">YouTube</a>
+              </li>
+              
+              <li>
+                <a href="#">Twitter</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        
+        <div class="legal">
+          <p>&copy; 2024 All rights reserved.</p>
+          
+          <div class="legal__links">
+            <span>Made with <span class="heart">♥</span></span>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
