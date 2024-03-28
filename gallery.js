@@ -18,33 +18,28 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('.close').addEventListener('click', closeLightbox);
 
     // Dynamically load images from the 'images' folder
-
-    const folderPath = 'images';
-    fetch(folderPath)
+    fetch('images/files.csv')
         .then(response => response.text())
-        .then(text => {
-            // Parse HTML response to get links to images
-            const parser = new DOMParser();
-            const htmlDoc = parser.parseFromString(text, 'text/html');
-            const links = htmlDoc.querySelectorAll('a');
+        .then(data => {
+            // Parse CSV data
+            const rows = data.split('\n');
+            const headers = rows[0].split(',');
+            const filenameIndex = headers.indexOf('filename');
+            const filenames = rows.slice(1).map(row => row.split(',')[filenameIndex]);
 
-            console.log(htmlDoc)
-
-            // Iterate over image links and add them to the gallery
-            links.forEach(link => {
-                const href = link.getAttribute('href');
-                // Check if the href is a valid image file (you can adjust this regex as needed)
-                if (/\.(jpg|jpeg|png|gif)$/i.test(href)) {
-                    const imgSrc = link.getAttribute('href');
-                    const img = document.createElement('img');
-                    const imgContainer = document.createElement('div');
-                    imgContainer.className = 'img-container';
-                    img.src = imgSrc;
-                    img.addEventListener('click', () => openLightbox(imgSrc));
-                    imgContainer.appendChild(img);
-                    gallery.appendChild(imgContainer);
-                }
+            
+            // Loop through the image filenames and create image elements
+            filenames.forEach(filename => {
+                const imagePath = 'images/' + filename.trim(); // Path to the image file
+                const img = document.createElement('img');
+                const imgContainer = document.createElement('div');
+                imgContainer.className = 'img-container';
+                img.src = imagePath;
+                img.addEventListener('click', () => openLightbox(imagePath));
+                imgContainer.appendChild(img);
+                gallery.appendChild(imgContainer);
             });
+            
         })
-        .catch(error => console.error('Error loading images:', error));
+        .catch(error => console.error('Error fetching CSV file:', error));
 });
