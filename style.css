@@ -12,16 +12,16 @@
 }
 
 .hero_box .hero_bg {
-    top: 0;
-    left: 0;
+    display: flex;
+    justify-content: center;
     width: 100%;
     overflow: hidden;
-    z-index: -1;
+    background-color: black;
 }
 
 
 .hero_box .hero_bg video{
-    width: 100%;
+    width: 70%;
     -o-object-fit: cover;
     object-fit: cover;
 }
@@ -176,7 +176,7 @@ a:hover {
 }
 
 .services-heading{
-    margin-top: 16px;
+    margin-top: 20px;
     padding: 8px 8px;
     align-items: center;
     text-align: center;
@@ -199,8 +199,8 @@ a:hover {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
     margin-bottom: 50px;
 }
 
