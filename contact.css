@@ -51,7 +51,7 @@ body {
 }
 
 nav {
-    background: #3e4e70ff;
+    background: rgb(29, 50, 97);
     padding: 5px 20px;
 }
 
@@ -255,7 +255,7 @@ a:hover {
 .form-group button {
     grid-column: span 2;
     padding: 10px;
-    background-color: #809bb9;
+    background: rgb(29, 50, 97);
     color: #fff;
     border: none;
     border-radius: 5px;

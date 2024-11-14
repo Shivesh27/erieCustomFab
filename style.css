@@ -53,7 +53,7 @@ body {
 }
 
 nav {
-    background: #3e4e70ff;
+    background: rgb(29, 50, 97);
     padding: 5px 20px;
 }
 
@@ -261,6 +261,7 @@ a:hover {
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
+    filter: blur(1px);
 }
 
 .about-content {
@@ -270,6 +271,7 @@ a:hover {
     margin-right: auto;
     text-align: center;
     color: white;
+    text-shadow: 2px 2px 10px #000;
 }
 
 .about-title {
