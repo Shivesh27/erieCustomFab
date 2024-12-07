@@ -1,151 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Erie Custom Fab Inc</title>
 
-
     <script>
-        function toggle() {
-            const items = document.getElementsByClassName("item");
-            for(var i = 0; i< items.length; i++) {
-                items[i].classList.toggle("active")
-            }
-            const bars = document.getElementById("bars");
-            bars.classList.toggle("open")
+      function toggle() {
+        const items = document.getElementsByClassName("item");
+        for (var i = 0; i < items.length; i++) {
+          items[i].classList.toggle("active");
         }
+        const bars = document.getElementById("bars");
+        bars.classList.toggle("open");
+      }
     </script>
-</head>
-<link rel="stylesheet" href="style.css">
-<body>
-
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <body>
     <!-- hero section -->
     <div class="hero-container">
-        <header>
-            <nav>
-                <ul class="menu">
-                    <li class="logo"><a href="index.html"><img class="main_logo" src="./images/logo.png"/></a></li>
-                    <li class="item"><a href="about.html">About</a></li>
-                    <li class="item"><a href="services.html">Services</a></li>
-                    <li class="item"><a href="gallery.html">Gallery</a></li>
-                    <li class="item button"><a href="contact.html">Contact</a></li>
-                    <li class="toggle" onclick="toggle()"><span class="bars" id="bars"></span></li>
-                </ul>
-            </nav>
-        </header>
+      <header>
+        <nav>
+          <ul class="menu">
+            <li class="logo">
+              <a href="index.html"
+                ><img class="main_logo" src="./images/logo.png"
+              /></a>
+            </li>
+            <li class="item"><a href="about.html">About</a></li>
+            <li class="item"><a href="services.html">Services</a></li>
+            <li class="item"><a href="gallery.html">Gallery</a></li>
+            <li class="item button"><a href="contact.html">Contact</a></li>
+            <li class="toggle" onclick="toggle()">
+              <span class="bars" id="bars"></span>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-        <div class="hero_box">
-            <div class="hero_bg">
-                <video autoplay muted loop>
-                  <source src="./videos/ECFAnimation.mp4" type="video/mp4">
-                </video>
-            </div>
+      <div class="hero_box">
+        <div class="hero_bg">
+          <video autoplay muted loop>
+            <source src="./videos/ECFAnimation.mp4" type="video/mp4" />
+          </video>
         </div>
+      </div>
     </div>
 
     <!-- services -->
 
     <div class="services-container">
-        <div class="services-heading">
-            <div class="services-title">Custom Weilding</div>
-            <div class="services-subtitle">Expert welding services for all your needs</div>
+      <div class="services-heading">
+        <div class="services-title">Custom fabrication</div>
+        <div class="services-subtitle">
+          Expert welding services for all your needs
+        </div>
+      </div>
+
+      <div class="cards-container">
+        <div class="card">
+          <div class="card-icon"><img src="images/s1.svg" alt="" /></div>
+          <div class="card-title">Weilding</div>
+          <div class="card-desc">alskhdfl aslkdfnl laskkiiei ididipsf</div>
         </div>
 
-        <div class="cards-container">
-            <div class="card">
-                <div class="card-icon"><img src="images/s1.svg" alt=""></div>
-                <div class="card-title">Professional Weilding</div>
-                <div class="card-desc">alskhdfl aslkdfnl laskkiiei ididipsf</div>
-            </div>
-
-            <div class="card">
-                <div class="card-icon"><img src="images/s1.svg" alt=""></div>
-                <div class="card-title">Forming</div>
-                <div class="card-desc">alskhdfl aslkdfnl laskkiiei ididipsfs</div>
-            </div>
-
-            <div class="card">
-                <div class="card-icon"><img src="images/s1.svg" alt=""></div>
-                <div class="card-title">Rolling</div>
-                <div class="card-desc">alskhdfl aslkdfnl laskkiiei ididipsfs</div>
-            </div>
-
-            <div class="card">
-              <div class="card-icon"><img src="images/s1.svg" alt=""></div>
-              <div class="card-title">Painting</div>
-              <div class="card-desc">alskhdfl aslkdfnl laskkiiei ididipsfs</div>
-            </div>
-            
+        <div class="card">
+          <div class="card-icon"><img src="images/s1.svg" alt="" /></div>
+          <div class="card-title">Forming</div>
+          <div class="card-desc">alskhdfl aslkdfnl laskkiiei ididipsfs</div>
         </div>
+
+        <div class="card">
+          <div class="card-icon"><img src="images/s1.svg" alt="" /></div>
+          <div class="card-title">Rolling</div>
+          <div class="card-desc">alskhdfl aslkdfnl laskkiiei ididipsfs</div>
+        </div>
+
+        <div class="card">
+          <div class="card-icon"><img src="images/s1.svg" alt="" /></div>
+          <div class="card-title">Painting</div>
+          <div class="card-desc">alskhdfl aslkdfnl laskkiiei ididipsfs</div>
+        </div>
+      </div>
     </div>
 
     <!-- banner -->
     <div class="about-container">
-        <div class="bg-container">
-            <img src="images/about_us.jpg" alt="" >
-        </div>
+      <div class="bg-container">
+        <img src="images/about_us.jpg" alt="" />
+      </div>
 
-        <div class="about-content">
-            <div class="about-title">About us</div>
-            <div class="about-desc">
-              Founded in 2020 in Leamington, Ontario, Erie Custom Fab Inc was created to support the vital greenhouse and automobile industries that are at the heart of our community. With a commitment to craftsmanship and innovation, we specialize in custom fabrication, offering precision solutions for a diverse range of sectors, from agriculture to automotive and beyond.
-              <br>
-              <br>
-              At Erie Custom Fab Inc, we believe that 
-                "You think, we make it." 
-              <br>
-              <br>
-              <!-- Whether it's designing custom parts for greenhouses or providing intricate components for automotive manufacturing, we work closely with our clients to bring their ideas to life. Our team is dedicated to ensuring every project meets the highest standards of quality, performance, and durability, tailored to the unique needs of each industry.
+      <div class="about-content">
+        <div class="about-title">About us</div>
+        <div class="about-desc">
+          Founded in 2020 in Leamington, Ontario, Erie Custom Fab Inc was
+          created to support the vital greenhouse and automobile industries that
+          are at the heart of our community. With a commitment to craftsmanship
+          and innovation, we specialize in custom fabrication, offering
+          precision solutions for a diverse range of sectors, from agriculture
+          to automotive and beyond.
+          <br />
+          <br />
+          At Erie Custom Fab Inc, we believe that "You think, we make it."
+          <br />
+          <br />
+          <!-- Whether it's designing custom parts for greenhouses or providing intricate components for automotive manufacturing, we work closely with our clients to bring their ideas to life. Our team is dedicated to ensuring every project meets the highest standards of quality, performance, and durability, tailored to the unique needs of each industry.
               Starting in Leamington, we've built our reputation by understanding the specific challenges of local industries and providing solutions that make a difference. 
               <br>
               <br>             
               From prototyping and small-scale runs to large-scale production, we offer flexibility, reliability, and top-tier craftsmanship in every project.
-              When you work with Erie Custom Fab Inc, you're not just getting a fabricator—you're getting a dedicated partner who understands the importance of your vision. You think it, we make it. Let’s create something great together. --></div>
-            <div class="about-cta"> <a href="about.html">Read More</a></div>
+              When you work with Erie Custom Fab Inc, you're not just getting a fabricator—you're getting a dedicated partner who understands the importance of your vision. You think it, we make it. Let’s create something great together. -->
         </div>
-        
+        <div class="about-cta"><a href="about.html">Read More</a></div>
+      </div>
     </div>
 
-
     <!-- footer -->
-      
-      <footer class="footer">
-        <div class="footer__addr">
-          <h1 class="footer__logo">Erie Custom Fab Inc</h1>
-              
-          <h2>Contact</h2>
-          
-          <address>
-            5534 Somewhere In. The World 22193-10212<br>
-                
-            <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
-          </address>
-        </div>
-        
-        <ul class="footer__nav">
-          <li class="nav__item">
-            <h2 class="nav__title">Links</h2>
-      
-            <ul class="nav__ul">
-              <li>
-                <a href="#">Home</a>
-              </li>
-      
-              <li>
-                <a href="#">About us</a>
-              </li>
-                  
-              <li>
-                <a href="#">Gallery</a>
-              </li>
-              <li>
-                <a href="#">Services</a>
-              </li>
-            </ul>
-          </li>
-          
-          <!-- <li class="nav__item nav__item--extra">
+
+    <footer class="footer">
+      <div class="footer__addr">
+        <h1 class="footer__logo">Erie Custom Fab Inc</h1>
+
+        <h2>Contact</h2>
+
+        <address>
+          6 Iroquois Rd. Leamington, ON N8H 3V7 CANADA
+          <br />
+
+          <a class="footer__btn" href="mailto:rfq@ERIECUSTOMFAB.COM"
+            >Email Us</a
+          >
+        </address>
+      </div>
+
+      <ul class="footer__nav">
+        <li class="nav__item">
+          <h2 class="nav__title">Links</h2>
+
+          <ul class="nav__ul">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+
+            <li>
+              <a href="about.html">About us</a>
+            </li>
+
+            <li>
+              <a href="gallery.html">Gallery</a>
+            </li>
+            <li>
+              <a href="services.html">Services</a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- <li class="nav__item nav__item--extra">
             <h2 class="nav__title">Quick Links</h2>
             
             <ul class="nav__ul nav__ul--extra">
@@ -166,33 +177,33 @@
               
             </ul>
           </li> -->
-          
-          <li class="nav__item">
-            <h2 class="nav__title">Social</h2>
-            
-            <ul class="nav__ul">
-              <li>
-                <a href="#">Instagram</a>
-              </li>
-              
-              <li>
-                <a href="#">YouTube</a>
-              </li>
-              
-              <li>
-                <a href="#">Twitter</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-        
-        <div class="legal">
-          <p>&copy; 2024 All rights reserved.</p>
-          
-          <div class="legal__links">
-            <span>Made with <span class="heart">♥</span></span>
-          </div>
+
+        <li class="nav__item">
+          <h2 class="nav__title">Social</h2>
+
+          <ul class="nav__ul">
+            <li>
+              <a href="#">Instagram</a>
+            </li>
+
+            <li>
+              <a href="#">YouTube</a>
+            </li>
+
+            <li>
+              <a href="#">Twitter</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="legal">
+        <p>&copy; 2024 All rights reserved.</p>
+
+        <div class="legal__links">
+          <span>Made with <span class="heart">♥</span></span>
         </div>
-      </footer>
-</body>
+      </div>
+    </footer>
+  </body>
 </html>

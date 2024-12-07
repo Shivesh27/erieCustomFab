@@ -1,98 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Erie Custom Fab Inc</title>
 
-
     <script>
-        function toggle() {
-            const items = document.getElementsByClassName("item");
-            for(var i = 0; i< items.length; i++) {
-                items[i].classList.toggle("active")
-            }
-            const bars = document.getElementById("bars");
-            bars.classList.toggle("open")
+      function toggle() {
+        const items = document.getElementsByClassName("item");
+        for (var i = 0; i < items.length; i++) {
+          items[i].classList.toggle("active");
         }
+        const bars = document.getElementById("bars");
+        bars.classList.toggle("open");
+      }
     </script>
-</head>
-<link rel="stylesheet" href="gallery.css">
-<body>
-
+  </head>
+  <link rel="stylesheet" href="gallery.css" />
+  <body>
     <!-- hero section -->
     <div class="hero-container">
-        <header>
-            <nav>
-                <ul class="menu">
-                    <li class="logo"><a href="index.html"><img class="main_logo" src="./images/logo.png"/></a></li>
-                    <li class="item"><a href="index.html">Home</a></li>
-                    <li class="item"><a href="about.html">About</a></li>
-                    <li class="item"><a href="services.html">Services</a></li>
-                    <li class="item"><a href="gallery.html">Gallery</a></li>
-                    <li class="item button"><a href="contact.html">Contact</a></li>
-                    <li class="toggle" onclick="toggle()"><span class="bars" id="bars"></span></li>
-                </ul>
-            </nav>
-        </header>
+      <header>
+        <nav>
+          <ul class="menu">
+            <li class="logo">
+              <a href="index.html"
+                ><img class="main_logo" src="./images/logo.png"
+              /></a>
+            </li>
+            <li class="item"><a href="index.html">Home</a></li>
+            <li class="item"><a href="about.html">About</a></li>
+            <li class="item"><a href="services.html">Services</a></li>
+            <li class="item"><a href="gallery.html">Gallery</a></li>
+            <li class="item button"><a href="contact.html">Contact</a></li>
+            <li class="toggle" onclick="toggle()">
+              <span class="bars" id="bars"></span>
+            </li>
+          </ul>
+        </nav>
+      </header>
     </div>
-
 
     <!-- Gallery -->
     <div id="lightbox" class="lightbox">
-        <span class="close">&times;</span>
-        <img class="lightbox-content" id="lightbox-img">
+      <span class="close">&times;</span>
+      <img class="lightbox-content" id="lightbox-img" />
     </div>
 
     <div class="gallery-container">
-        <div class="gallery-title">Gallery</div>
-        <div class="gallery">
-                <!-- Images will be loaded here dynamically -->
-        </div>
+      <div class="gallery-title">Gallery</div>
+      <div class="gallery">
+        <!-- Images will be loaded here dynamically -->
+      </div>
     </div>
 
-   
     <script src="gallery.js"></script>
 
-
     <!-- footer -->
-      
-      <footer class="footer">
-        <div class="footer__addr">
-          <h1 class="footer__logo">Erie Custom Fab Inc</h1>
-              
-          <h2>Contact</h2>
-          
-          <address>
-            5534 Somewhere In. The World 22193-10212<br>
-                
-            <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
-          </address>
-        </div>
-        
-        <ul class="footer__nav">
-          <li class="nav__item">
-            <h2 class="nav__title">Links</h2>
-      
-            <ul class="nav__ul">
-              <li>
-                <a href="#">Home</a>
-              </li>
-      
-              <li>
-                <a href="#">About us</a>
-              </li>
-                  
-              <li>
-                <a href="#">Gallery</a>
-              </li>
-              <li>
-                <a href="#">Services</a>
-              </li>
-            </ul>
-          </li>
-          
-          <!-- <li class="nav__item nav__item--extra">
+
+    <footer class="footer">
+      <div class="footer__addr">
+        <h1 class="footer__logo">Erie Custom Fab Inc</h1>
+
+        <h2>Contact</h2>
+
+        <address>
+          5534 Somewhere In. The World 22193-10212<br />
+
+          <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
+        </address>
+      </div>
+
+      <ul class="footer__nav">
+        <li class="nav__item">
+          <h2 class="nav__title">Links</h2>
+
+          <ul class="nav__ul">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+
+            <li>
+              <a href="about.html">About us</a>
+            </li>
+
+            <li>
+              <a href="gallery.html">Gallery</a>
+            </li>
+            <li>
+              <a href="services.html">Services</a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- <li class="nav__item nav__item--extra">
             <h2 class="nav__title">Quick Links</h2>
             
             <ul class="nav__ul nav__ul--extra">
@@ -113,33 +114,33 @@
               
             </ul>
           </li> -->
-          
-          <li class="nav__item">
-            <h2 class="nav__title">Social</h2>
-            
-            <ul class="nav__ul">
-              <li>
-                <a href="#">Instagram</a>
-              </li>
-              
-              <li>
-                <a href="#">YouTube</a>
-              </li>
-              
-              <li>
-                <a href="#">Twitter</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-        
-        <div class="legal">
-          <p>&copy; 2024 All rights reserved.</p>
-          
-          <div class="legal__links">
-            <span>Made with <span class="heart">♥</span></span>
-          </div>
+
+        <li class="nav__item">
+          <h2 class="nav__title">Social</h2>
+
+          <ul class="nav__ul">
+            <li>
+              <a href="#">Instagram</a>
+            </li>
+
+            <li>
+              <a href="#">YouTube</a>
+            </li>
+
+            <li>
+              <a href="#">Twitter</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="legal">
+        <p>&copy; 2024 All rights reserved.</p>
+
+        <div class="legal__links">
+          <span>Made with <span class="heart">♥</span></span>
         </div>
-      </footer>
-</body>
+      </div>
+    </footer>
+  </body>
 </html>
